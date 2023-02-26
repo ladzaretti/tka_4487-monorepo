@@ -1,0 +1,47 @@
+{
+  "baseBranches": [
+    "develop"
+  ],
+  "workflowRules": {
+    "enabled": true
+  },
+  "enableRenovate": true,
+  "extends": [
+    ":dependencyDashboard",
+    ":semanticPrefixFixDepsChoreOthers",
+    ":autodetectPinVersions",
+    ":prConcurrentLimit10",
+    "group:monorepos",
+    "group:recommended",
+    "workarounds:all",
+    "github>whitesource/merge-confidence:beta"
+  ],
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**",
+    "**/examples/**",
+    "**/__fixtures__/**"
+  ],
+  "transitiveRemediation": true,
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
+      "automerge": true
+    },
+    {
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "automerge": true
+    }
+  ],
+  "major": {
+    "dependencyDashboardApproval": true
+  }
+}
