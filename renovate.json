@@ -5,8 +5,8 @@
   "extends": [
     ":dependencyDashboard",
     ":semanticPrefixFixDepsChoreOthers",
-    ":autodetectPinVersions",
     ":prConcurrentLimit10",
+    ":pinVersions",
     "group:monorepos",
     "group:recommended",
     "workarounds:all",
