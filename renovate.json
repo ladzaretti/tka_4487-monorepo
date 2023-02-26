@@ -26,15 +26,6 @@
   "transitiveRemediation": true,
   "packageRules": [
     {
-      "matchUpdateTypes": [
-        "minor",
-        "patch",
-        "pin",
-        "digest"
-      ],
-      "automerge": true
-    },
-    {
       "matchDepTypes": [
         "devDependencies"
       ],
