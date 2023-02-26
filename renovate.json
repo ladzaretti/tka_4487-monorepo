@@ -6,7 +6,6 @@
     ":dependencyDashboard",
     ":semanticPrefixFixDepsChoreOthers",
     ":prConcurrentLimit10",
-    ":pinVersions",
     "group:monorepos",
     "group:recommended",
     "workarounds:all",
@@ -26,6 +25,10 @@
         "devDependencies"
       ],
       "automerge": true
+    },
+    {
+      "matchManagers": ["npm"],
+      "pinVersions": true
     }
   ],
   "major": {
