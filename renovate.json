@@ -2,10 +2,6 @@
   "baseBranches": [
     "develop"
   ],
-  "workflowRules": {
-    "enabled": true
-  },
-  "enableRenovate": true,
   "extends": [
     ":dependencyDashboard",
     ":semanticPrefixFixDepsChoreOthers",
