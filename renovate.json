@@ -28,7 +28,7 @@
     },
     {
       "matchManagers": ["npm"],
-      "pinVersions": true
+      "rangeStrategy": "pin"
     }
   ],
   "major": {
