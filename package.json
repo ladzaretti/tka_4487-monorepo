@@ -1,5 +1,5 @@
 {
   "dependencies" : {
-    "serverless-step-functions": "^3.10.0"
+    "serverless-step-functions": "3.12.1"
   }
 }
